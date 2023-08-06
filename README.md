@@ -19,6 +19,7 @@
   # Explicando
   ## cy.gerarAccessToken()
   No arquivo commands.js criei um comando que simula a geração de um `accessToken`, porque não achei uma API de teste que tenha esse tipo de token (caso alguém saiba me mande uma mensagem que eu atualizo o projeto). A ideia é mostrar como usar esse código gerado.
+  
   ![Screenshot do código do comando.](images/commands.png)
 
   ## Utilização do token
