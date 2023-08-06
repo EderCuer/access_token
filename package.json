@@ -1,0 +1,17 @@
+{
+  "name": "access_token",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open"
+  },
+  "author": "Eder Cuer",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.17.3"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2"
+  }
+}
