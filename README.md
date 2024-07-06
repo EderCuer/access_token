@@ -30,3 +30,38 @@
   ![Screenshot do código do teste.](images/teste.png)
 
   ![Screenshot da execução do teste.](images/cypress.png)
+
+____________
+
+# Generating Tokens for Use in Requests
+You know those tokens that expire and need to be generated again from time to time? You might wonder how to generate these tokens. The idea of this simple project is to give an example of how we can generate tokens and use them in our requests with Cypress.
+Let's go!
+
+# Running the Project
+## Prerequisites
+- You need to have Node.js and NPM installed to run the project.
+> I used versions v19.1.0 and 8.19.3, respectively
+
+## Instructions
+1. Clone the project
+> git clone git@github.com:EderCuer/access_token.git
+2. Inside the folder, install the dependencies
+> npm install
+
+## Running the Project
+After installing the dependencies, run `npm run cy:open` in the terminal.
+
+# Explanation
+## cy.gerarAccessToken()
+In the commands.js file, I created a command that simulates the generation of an `accessToken` because I couldn't find a test API that has this type of token (if anyone knows, send me a message and I'll update the project). The idea is to show how to use this generated code.
+
+![Screenshot of the command code.](images/commands.png)
+
+## Using the Token
+I remember when I started using Cypress, I had a lot of trouble understanding some things. I had experience with Capybara (Ruby) and found everything in Cypress more complicated, and the first time I worked with token generation, nothing worked, I just got stressed, but after a friend's help, everything became clearer to me.
+
+Coming back... in this solution, when we use the command to generate the token, we use .then() to use the token that was generated via the command. As you can see in the code below, every request we make is inside it, and with that, we can use the token smoothly. I left a log there to see the "token" that was generated.
+
+![Screenshot of the test code.](images/teste.png)
+
+![Screenshot of the test execution.](images/cypress.png)
